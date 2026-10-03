@@ -1,0 +1,25 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+
+# Training checkpoints & caches
+control_tuner_checkpoints/
+checkpoint-*/
+runs/
+.cache/
+
+# Large model weight files (Do NOT push weights to GitHub; store code on GitHub, weights on Hugging Face Hub)
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Standalone merged model weights directory
+control_tuner_standalone_model/
+
+# Allow adapter configuration and tokenizer json files, but ignore adapter weights if larger than 100MB
+control_tuner_final_adapter/*.safetensors
